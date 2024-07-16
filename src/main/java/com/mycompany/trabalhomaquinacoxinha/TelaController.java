@@ -13,7 +13,12 @@ import javafx.scene.control.TextField;
  */
 public class TelaController {
     
-    MaquinaCoxinha maquina = new MaquinaCoxinha();
+    MaquinaCoxinha maquina;
+    
+    @FXML
+    private void initialize(){
+        maquina = new MaquinaCoxinha();
+    }
     
     @FXML 
     private TextField estoqueCoxinhas;
